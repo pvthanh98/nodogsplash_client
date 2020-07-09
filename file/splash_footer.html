@@ -1,0 +1,36 @@
+</div>
+<form class="form_info " onsubmit="return validate()" action="/success">
+   <div class="tieude mb-2 mt-3" style="text-align:center; font-size: 24px">
+       Vui lòng nhấn nút kết nối để truy cập wifi
+   </div>
+   <input type="hidden" name="tok" value="$tok">
+   <input id="redir" type="hidden" name="redir" value="">
+       <input id="name" type="text" name="name" class="form-control mt-2" placeholder="Họ và tên">
+       <input id="phone" type="text" name="phone" class="form-control mt-2" placeholder="Số điện thoại">
+       <input id="email" type="email" name="email" class="form-control mt-2 " placeholder="Email">
+       <input type="submit" style="width:100%" class="btn btn-warning btn_submit mt-2" value="KẾT NỐI NGAY">   
+</form>
+</div>
+<div class="col-md-3 footer text-center"></div>
+</div>
+</div>
+</body>
+<script src="./public/bootstrap/js/jquery.min.js"></script>
+<script src="./public/bootstrap/js/bootstrap.min.js"></script>
+<script>
+
+function validate(){
+if(document.getElementById("name").value == ""
+|| document.getElementById("email").value == ""
+|| document.getElementById("phone").value == ""){
+alert("Bạn cần nhập đủ thông tin");
+return false;
+}
+document.getElementById("redir").value ="https://sensorhub.tech/api/add_wifi_customer/"
++ document.getElementById("name").value + "/"
++ document.getElementById("email").value + "/"
++ document.getElementById("phone").value;
+return true;					
+}
+</script>
+</html>

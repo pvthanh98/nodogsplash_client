@@ -1,0 +1,55 @@
+body {
+  background: url("images/background_2.jpg") no-repeat center center fixed;
+}
+html, body {
+  height:100%
+}
+.form_info{
+  border-radius:8px;
+}
+
+.form_info input[type="text"],input[type="email"] {
+  padding: 24px;
+}
+
+.col_contain_form {
+  overflow:hidden;
+}
+/*
+@media only screen and (max-width: 600px){
+  .form_info{
+    margin-top:350px;
+  }
+}
+*/
+
+.btn_submit{
+  padding:12px;
+  border-radius: 12px;
+}
+
+.tieude{
+  margin-top:8px;
+  color:white;
+}
+
+.border{
+  border:1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
